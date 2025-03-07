@@ -57,8 +57,6 @@ fn main() {
                 "5" => end(&client_name),
                 _ => { println!("Opção inválida, tente novamente!"); }
             }
-
-            println!("Até a próxima!")
         }
     }
 

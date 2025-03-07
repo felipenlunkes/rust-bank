@@ -97,7 +97,7 @@ pub mod bank {
         let client = Bank::get_client_for_update(&mut bank, client_id.to_string()).unwrap();
 
         if value > &client.account_value {
-            return Err(format!("O saldo do cliente ({}) é menor que o valor pedido para saque {}", client.account_value, &value));
+            return Err(format!("O saldo do cliente (R$ {}) é menor que o valor pedido para saque (R$ {})", client.account_value, &value));
         }
 
         client.account_value -= value;
